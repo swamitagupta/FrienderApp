@@ -15,6 +15,8 @@
 		703441E023E2CB2600517E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703441DE23E2CB2600517E2B /* LaunchScreen.storyboard */; };
 		703441EB23E2CB2700517E2B /* acmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703441EA23E2CB2700517E2B /* acmTests.swift */; };
 		703441F623E2CB2700517E2B /* acmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703441F523E2CB2700517E2B /* acmUITests.swift */; };
+		7034420423E2D26C00517E2B /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7034420323E2D26C00517E2B /* InfoVC.swift */; };
+		7034420623E5543B00517E2B /* Addc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7034420523E5543B00517E2B /* Addc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		703441D023E2CB2200517E2B /* acm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = acm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		703441D023E2CB2200517E2B /* Friender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		703441D323E2CB2200517E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		703441D523E2CB2200517E2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		703441D723E2CB2200517E2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		703441F123E2CB2700517E2B /* acmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = acmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		703441F523E2CB2700517E2B /* acmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acmUITests.swift; sourceTree = "<group>"; };
 		703441F723E2CB2700517E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7034420323E2D26C00517E2B /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		7034420523E5543B00517E2B /* Addc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,7 @@
 		703441D123E2CB2200517E2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				703441D023E2CB2200517E2B /* acm.app */,
+				703441D023E2CB2200517E2B /* Friender.app */,
 				703441E623E2CB2600517E2B /* acmTests.xctest */,
 				703441F123E2CB2700517E2B /* acmUITests.xctest */,
 			);
@@ -102,7 +106,9 @@
 				703441D323E2CB2200517E2B /* AppDelegate.swift */,
 				703441D523E2CB2200517E2B /* SceneDelegate.swift */,
 				703441D723E2CB2200517E2B /* ViewController.swift */,
+				7034420323E2D26C00517E2B /* InfoVC.swift */,
 				703441D923E2CB2200517E2B /* Main.storyboard */,
+				7034420523E5543B00517E2B /* Addc.swift */,
 				703441DC23E2CB2600517E2B /* Assets.xcassets */,
 				703441DE23E2CB2600517E2B /* LaunchScreen.storyboard */,
 				703441E123E2CB2600517E2B /* Info.plist */,
@@ -145,7 +151,7 @@
 			);
 			name = acm;
 			productName = acm;
-			productReference = 703441D023E2CB2200517E2B /* acm.app */;
+			productReference = 703441D023E2CB2200517E2B /* Friender.app */;
 			productType = "com.apple.product-type.application";
 		};
 		703441E523E2CB2600517E2B /* acmTests */ = {
@@ -259,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7034420423E2D26C00517E2B /* InfoVC.swift in Sources */,
 				703441D823E2CB2200517E2B /* ViewController.swift in Sources */,
 				703441D423E2CB2200517E2B /* AppDelegate.swift in Sources */,
 				703441D623E2CB2200517E2B /* SceneDelegate.swift in Sources */,
+				7034420623E5543B00517E2B /* Addc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +449,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.swams.acm;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Friender;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +466,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.swams.acm;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Friender;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
