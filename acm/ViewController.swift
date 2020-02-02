@@ -25,27 +25,27 @@ class Contactinfo {
         
     }
 }
-
+var carray = [Contactinfo]()
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var contacts: UITableView!
     
-    @IBOutlet weak var s: UISearchBar!
+    /*@IBOutlet weak var s: UISearchBar!
     var member = [[String:AnyObject]]()
 
     var members = [String:AnyObject]()
 
     var searchActive = false
     var filtered:[String] = []
-    var data: [String] = []
+    var data: [String] = []*/
     
     @IBAction func add(_ sender: Any) {
        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        /*let storyboard = UIStoryboard(name: "Main", bundle: nil);
         let vc = storyboard.instantiateViewController(withIdentifier: "mySecondScreen") ; 
-        self.present(vc, animated: true, completion: nil);
+        self.present(vc, animated: true, completion: nil);*/
     }
-    var carray = [Contactinfo]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,7 +79,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         contacts.delegate = self
         
     }
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+    /*func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchActive = true
     }
 
@@ -117,14 +117,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 
-        return "MemberDirectory"
+        return "Directory"
 
-    }
+    }*/
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.rowHeight = 80
-        //return carray.count
-        if(searchActive){
+        return carray.count
+        /*if(searchActive){
               print("Yup")
             return filtered.count
            }
@@ -132,7 +132,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print("nah")
             return carray.count
             
-           }
+           }*/
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -148,7 +148,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell?.imageView?.image = carray[indexPath.row].image
         
         
-        //cell!.backgroundColor = UIColor.blue
+        cell!.backgroundColor = .yellow
         
         return cell!
     }
@@ -158,6 +158,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         performSegue(withIdentifier: "info", sender: self)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      navigationController?.navigationBar.tintColor = .black
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? InfoVC {
             destination.cont =
